@@ -225,6 +225,7 @@ static void call_class_loads(void)
         }
         // 执行load方法。load方法可能包含动态加载镜像的逻辑，此时loadable_classes则会指向
         // 新的容器来收集动态加载镜像中的load方法
+        #warning zll load 直接调用没有通过runtime
         (*load_method)(cls, SEL_load);
     }
     

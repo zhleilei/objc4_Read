@@ -111,7 +111,7 @@ static void grow_refs_and_insert(weak_entry_t *entry,
  */
 static void append_referrer(weak_entry_t *entry, objc_object **new_referrer)
 {
-    // 1、若entry使用inline形式保存对象的弱引用的地址new_referrer
+    // 1、若entry使用inline形式保存对象的弱引用的地址new_referrer 
     if (! entry->out_of_line()) {
         // Try to insert inline.
         // 2、在inline_referrers中搜索空单元，若存在则填入new_referrer并返回

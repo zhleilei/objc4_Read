@@ -51,7 +51,7 @@ extern void (*callbackFunction)( Class, Category );
 * I removed attempts to lock the class hashtable, since this introduced
 * deadlock which was hard to remove.  The only way you can get into trouble
 * is if one thread loads a module while another thread tries to access the
-* loaded classes (using objc_lookUpClass) before the load is complete.
+* loaded classes (using objc_lookUpClass) before the load is complete. 
 **********************************************************************************/
 int objc_loadModule(char *moduleName, void (*class_callback) (Class, Category), int *errorCode)
 {

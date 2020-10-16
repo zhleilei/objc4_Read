@@ -34,7 +34,7 @@
 #include <stdbool.h>
 
 #if !OBJC_TYPES_DEFINED
-/// An opaque type that represents an Objective-C class.  类的定义
+/// An opaque type that represents an Objective-C class.  类的定义 
 typedef struct objc_class *Class;
 
 /// Represents an instance of a class. 对象的定义

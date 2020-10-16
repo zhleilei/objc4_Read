@@ -52,7 +52,7 @@
     // future expansion:
     // uintptr_t fast_rr : 1;     // no r/r overrides
     // uintptr_t lock : 2;        // lock for atomic property, @synch
-    // uintptr_t extraBytes : 1;  // allocated with extra bytes
+    // uintptr_t extraBytes : 1;  // allocated with extra bytes 
 
 # if __arm64__
 #   define ISA_MASK        0x0000000ffffffff8ULL

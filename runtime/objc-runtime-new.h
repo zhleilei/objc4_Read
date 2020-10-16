@@ -91,7 +91,7 @@ public:
 };
 
 
-// classref_t is unremapped class_t*
+// classref_t is unremapped(未映射) class_t*
 typedef struct classref * classref_t;
 
 /***********************************************************************
@@ -1542,7 +1542,7 @@ public:
     }
 };
 
-
+#warning zll objc_class 真正的源码
 struct objc_class : objc_object {
     // Class ISA;     // 元类
     Class superclass; // 父类

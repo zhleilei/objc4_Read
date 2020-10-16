@@ -326,36 +326,38 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9672F7ED14D5F488007CEC96 /* NSObject.mm */,
+				838485E00D6D68A200CEA253 /* objc-runtime-new.h */,
+				838485E10D6D68A200CEA253 /* objc-runtime-new.mm */,
+				838485D20D6D68A200CEA253 /* objc-exception.mm */,
+				838485E40D6D68A200CEA253 /* objc-runtime.mm */,
+				838485CE0D6D68A200CEA253 /* objc-class.mm */,
+				838485D50D6D68A200CEA253 /* objc-initialize.mm */,
+				838485D60D6D68A200CEA253 /* objc-layout.mm */,
+				838485D80D6D68A200CEA253 /* objc-load.mm */,
+				39ABD72012F0B61800D1054C /* objc-weak.mm */,
+				838485E80D6D68A200CEA253 /* objc-sel.mm */,
+				838486190D6D68A800CEA253 /* Protocol.mm */,
+				83D49E4E13C7C84F0057F1DD /* objc-msg-arm64.s */,
+				838485CA0D6D68A200CEA253 /* objc-auto.mm */,
 				838485B80D6D687300CEA253 /* hashtable2.mm */,
 				838485BC0D6D687300CEA253 /* maptable.mm */,
-				9672F7ED14D5F488007CEC96 /* NSObject.mm */,
-				838486190D6D68A800CEA253 /* Protocol.mm */,
 				830F2A930D73876100392440 /* objc-accessors.mm */,
-				838485CA0D6D68A200CEA253 /* objc-auto.mm */,
-				39ABD72012F0B61800D1054C /* objc-weak.mm */,
+				838485E20D6D68A200CEA253 /* objc-runtime-old.mm */,
 				E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */,
 				838485CB0D6D68A200CEA253 /* objc-cache.mm */,
 				83F550DF155E030800E95D3B /* objc-cache-old.mm */,
 				838485CC0D6D68A200CEA253 /* objc-class-old.mm */,
-				838485CE0D6D68A200CEA253 /* objc-class.mm */,
 				838485D00D6D68A200CEA253 /* objc-errors.mm */,
-				838485D20D6D68A200CEA253 /* objc-exception.mm */,
 				838485D30D6D68A200CEA253 /* objc-file.mm */,
 				83BE02E30FCCB23400661494 /* objc-file-old.mm */,
-				838485D50D6D68A200CEA253 /* objc-initialize.mm */,
-				838485D60D6D68A200CEA253 /* objc-layout.mm */,
-				838485D80D6D68A200CEA253 /* objc-load.mm */,
 				838485DA0D6D68A200CEA253 /* objc-loadmethod.mm */,
 				838485DB0D6D68A200CEA253 /* objc-lockdebug.mm */,
 				83725F4914CA5BFA0014370E /* objc-opt.mm */,
 				831C85D40E10CF850066E64C /* objc-os.mm */,
 				393CEABF0DC69E3E000B69DE /* objc-references.mm */,
-				838485E10D6D68A200CEA253 /* objc-runtime-new.mm */,
-				838485E20D6D68A200CEA253 /* objc-runtime-old.mm */,
-				838485E40D6D68A200CEA253 /* objc-runtime.mm */,
 				838485E60D6D68A200CEA253 /* objc-sel-set.mm */,
 				83EB007A121C9EC200B92C16 /* objc-sel-table.s */,
-				838485E80D6D68A200CEA253 /* objc-sel.mm */,
 				834DF8B615993EE1002F2BC9 /* objc-sel-old.mm */,
 				838485EA0D6D68A200CEA253 /* objc-sync.mm */,
 				838485EB0D6D68A200CEA253 /* objc-typeencoding.mm */,
@@ -364,7 +366,6 @@
 				E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */,
 				E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */,
 				830F2A690D737FB800392440 /* objc-msg-arm.s */,
-				83D49E4E13C7C84F0057F1DD /* objc-msg-arm64.s */,
 				830F2A6A0D737FB800392440 /* objc-msg-i386.s */,
 				83B1A8BC0FF1AC0D0019EA5B /* objc-msg-simulator-i386.s */,
 				83C9C3381668B50E00F4E544 /* objc-msg-simulator-x86_64.s */,
@@ -480,17 +481,17 @@
 		838485C60D6D687700CEA253 /* Public Headers */ = {
 			isa = PBXGroup;
 			children = (
+				83F4B52715E843B100E0926F /* NSObject.h */,
+				838485EC0D6D68A200CEA253 /* objc.h */,
+				8384861A0D6D68A800CEA253 /* runtime.h */,
 				83A4AEDD1EA08C5700ACADDE /* ObjectiveC.apinotes */,
 				83A4AED71EA06D9D00ACADDE /* module.modulemap */,
 				83F4B52615E843B100E0926F /* NSObjCRuntime.h */,
-				83F4B52715E843B100E0926F /* NSObject.h */,
 				838485BD0D6D687300CEA253 /* message.h */,
 				838485C80D6D68A200CEA253 /* objc-api.h */,
 				838485C90D6D68A200CEA253 /* objc-auto.h */,
 				838485D10D6D68A200CEA253 /* objc-exception.h */,
 				838485E90D6D68A200CEA253 /* objc-sync.h */,
-				838485EC0D6D68A200CEA253 /* objc.h */,
-				8384861A0D6D68A800CEA253 /* runtime.h */,
 			);
 			name = "Public Headers";
 			sourceTree = "<group>";
@@ -534,6 +535,8 @@
 		8384862A0D6D6ABC00CEA253 /* Project Headers */ = {
 			isa = PBXGroup;
 			children = (
+				838485DC0D6D68A200CEA253 /* objc-private.h */,
+				39ABD71F12F0B61800D1054C /* objc-weak.h */,
 				838485CF0D6D68A200CEA253 /* objc-config.h */,
 				83BE02E50FCCB24D00661494 /* objc-file-old.h */,
 				83BE02E60FCCB24D00661494 /* objc-file.h */,
@@ -544,12 +547,9 @@
 				75A95050202BAA9A00D7D56F /* objc-locks.h */,
 				7593EC57202248DF0046AB96 /* objc-object.h */,
 				831C85D30E10CF850066E64C /* objc-os.h */,
-				838485DC0D6D68A200CEA253 /* objc-private.h */,
 				393CEAC50DC69E67000B69DE /* objc-references.h */,
-				838485E00D6D68A200CEA253 /* objc-runtime-new.h */,
 				83BE02E70FCCB24D00661494 /* objc-runtime-old.h */,
 				838485E50D6D68A200CEA253 /* objc-sel-set.h */,
-				39ABD71F12F0B61800D1054C /* objc-weak.h */,
 			);
 			name = "Project Headers";
 			sourceTree = "<group>";
@@ -696,7 +696,6 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					5255259721C68E3C00072CE6 = {

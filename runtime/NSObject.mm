@@ -45,7 +45,7 @@
 - (SEL)selector;
 @end
 
-
+#warning zll NSObject 源码
 /***********************************************************************
 * Weak ivar support
 **********************************************************************/
@@ -788,6 +788,7 @@ struct magic_t {
     }
 
     bool check() const {
+//        C 库函数 int strncmp(const char *str1, const char *str2, size_t n) 把 str1 和 str2 进行比较，最多比较前 n 个字节。
         return (m[0] == M0 && 0 == strncmp((char *)&m[1], M1, M1_len));
     }
 

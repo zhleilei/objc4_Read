@@ -183,7 +183,7 @@ static NXHashTable *allocatedClasses = nil;
 
 /**
  
- 类并不包含像分类列表这样的数据结构，category_t结构体只是为了在编译阶段记录开发者定义的分类，并将其保存到特定的容器中。但是程序本身则需要保存分类列表，因为加载程序时，需要按照容器内记录的分类信息依次加载分类。保存应用定义的所有分类的容器是category_list，也是locstamped_category_list_t的别名。locstamped_category_list_t是顺序表容器，元素为locstamped_category_t结构体。locstamped_category_t结构体包含指向category_t结构体的cat成员。
+ 类并不包含像分类列表这样的数据结构，category_t结构体只是为了在编译阶段记录开发者定义的分类，并将其保存到特定的容器中。但是程序本身则需要保存分类列表，因为加载程序时，需要按照容器内记录的分类信息依次加载分类。保存应用定义的所有分类的容器是category_list，也是locstamped_category_list_t的别名。locstamped_category_list_t是顺序表容器，元素为locstamped_category_t结构体。locstamped_category_t结构体包含指向category_t结构体的cat成员。  
 
  */
 typedef locstamped_category_list_t category_list;
@@ -6307,7 +6307,7 @@ addMethods(Class cls, const SEL *names, const IMP *imps, const char **types,
     return failedNames;
 }
 
-// 添加方法
+// 添加方法 
 BOOL 
 class_addMethod(Class cls, SEL name, IMP imp, const char *types)
 {

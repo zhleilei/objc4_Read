@@ -282,7 +282,7 @@ static void
 _class_lookUpIvar(Class cls, Ivar ivar, ptrdiff_t& ivarOffset, 
                   objc_ivar_memory_management_t& memoryManagement)
 {
-    ivarOffset = ivar_getOffset(ivar);
+    ivarOffset = ivar_getOffset(ivar); 
     
     // Look for ARC variables and ARC-style weak.
 

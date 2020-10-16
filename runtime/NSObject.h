@@ -10,6 +10,8 @@
 #include <objc/objc.h>
 #include <objc/NSObjCRuntime.h>
 
+#warning zll 开发使用的NSObject
+
 @class NSString, NSMethodSignature, NSInvocation;
 
 @protocol NSObject
@@ -56,7 +58,7 @@ OBJC_EXPORT
     Class isa  OBJC_ISA_AVAILABILITY;
 #pragma clang diagnostic pop
 }
-#warning zll load 原理
+
 + (void)load;
 
 + (void)initialize;

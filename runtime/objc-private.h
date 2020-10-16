@@ -159,7 +159,7 @@ union isa_t {
  .支持非指针类型isa相关；
 
  */
-
+#warning zll objc_object 源码  typedef struct objc_class *Class;
 struct objc_object {
 private:
     isa_t isa;
@@ -175,6 +175,8 @@ public:
 
     // ISA() assumes this is NOT a tagged pointer object
     // 获取对象类型，建立在对象不是tagged pointer的假设上
+    
+//    typedef struct objc_class *Class;
     Class ISA();
 
     // getIsa() allows this to be a tagged pointer object
